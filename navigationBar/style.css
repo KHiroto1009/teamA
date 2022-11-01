@@ -1,0 +1,17 @@
+.navigation-bar {
+  min-width: 100%;
+  width: auto;
+  height: 75px;
+  /* background-color: rgba(164, 0, 0, 0.308); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 5px red;
+}
+
+.main-icon {
+}
+
+.social-icon ul li {
+  display: inline;
+}
