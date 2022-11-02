@@ -1,7 +1,15 @@
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 .navigation-bar {
   min-width: 100%;
   width: auto;
-  height: 75px;
+  height: 100px;
   /* background-color: rgba(164, 0, 0, 0.308); */
   display: flex;
   justify-content: space-between;
@@ -12,6 +20,17 @@
 .main-icon {
 }
 
+.social-icon {
+  text-decoration: none;
+}
+.social-icon img {
+  height: 75px;
+  padding-right: 5px;
+}
+.social-icon ul {
+  margin: 0;
+  padding-right: 20px;
+}
 .social-icon ul li {
   display: inline;
 }
