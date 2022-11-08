@@ -1,8 +1,15 @@
-.a{
-    text-align: center;
+.result{
+  
+  text-align: center;
 
   }
-  .c{
+  .text{
     font: bold 24px sans-serif;
   }
-  
+  .button
+  {
+    width:70;
+    margin-top:10px;
+    font-size:20px; 
+
+  }
