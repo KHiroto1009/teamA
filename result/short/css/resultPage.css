@@ -1,0 +1,15 @@
+.result{
+  
+  text-align: center;
+
+  }
+  .text{
+    font: bold 24px sans-serif;
+  }
+  .button
+  {
+    width:70;
+    margin-top:10px;
+    font-size:20px; 
+
+  }
