@@ -1,15 +1,48 @@
 .result{
   
   text-align: center;
-
+  margin: auto;
+  background: #fff;
   }
+
+  
   .text{
-    font: bold 24px sans-serif;
+    font: bold 20px sans-serif;
+    font-family: arial;
   }
-  .button
-  {
-    width:70;
-    margin-top:10px;
-    font-size:20px; 
+  .button a {
+    font-family: arial;
+    background: #eee;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 280px;
+    padding: 10px 25px;
+    color: #000000;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+}
+.button a:hover {
+    background: #EECBE6;
+    color: #FFF;
+}
+.button a:after {
+    content: '';
+    width: 50px;
+    height: 5px;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+.button a:hover:after {
+    border-color: #fff;
+}
 
-  }
+  
+  
