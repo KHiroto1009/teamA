@@ -1,7 +1,6 @@
 .question{
     width: 50%;
     text-align: center;
-
  
 }
 
@@ -15,6 +14,8 @@
     padding-top: 50px;
     top:10px;
     margin-left: 100px;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 181, 198);
 }
 .img{
     width: 50%;
@@ -33,12 +34,15 @@
     text-align: center;
     margin-left: 50px;
     background-color: white;
+    border-radius: 100px;
+    border: 1px solid rgb(255, 0, 166);
 }
 .slide {
     position   : relative;
     overflow   : hidden;
                       /* 画像のサイズに合わせて変更ください */
-    width      : 250px;
+    min-width: 250px;
+    width      : auto;
     height     : 480px;
     margin     : auto;      /* サンプルは中央寄せの背景：白 */
     background : #fff;
