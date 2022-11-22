@@ -1,7 +1,5 @@
-
-const bijyoList = 
-    {
-        "2111":"./result/short/NakazimaArisu.html",
+{
+    "2111":"./result/short/NakazimaArisu.html",
         "2112":"./result/short/sakaguti.html",
         "2113":"./result/short/UsuiTinami.html",
         "2121":"./result/short/NakazimaArisu.html",
@@ -37,33 +35,5 @@ const bijyoList =
         "2341":"./result/long/SuzukiReira.html",
         "2342":"./result/long/SuzukiKokona.html",
         "2343":"./result/long/TeruyamaFuka.html"
-    
-    };
 
-const setQ1= (q1num) => {
-    localStorage.setItem('Q1', q1num);
-    window.location.href = './questionzpage2.html';
-}
-const setQ2= (q2num) => {
-    let getQ1 = localStorage.getItem('Q1')
-    localStorage.setItem('Q2',getQ1+q2num)
-    console.log(localStorage.getItem('Q2'))
-    window.location.href = './questionzpage3.html';
-}
-
-const setQ3= (q3num) => {
-    let getQ2 = localStorage.getItem('Q2')
-    localStorage.setItem('Q3',getQ2+q3num)
-    console.log(localStorage.getItem('Q3'))
-    window.location.href = './questionzpage4.html';
-}
-
-const setQ4= (q4num) => {
-    let getQ3 = localStorage.getItem('Q3')
-    let result = getQ3+q4num;
-    window.location.href = bijyoList[result];
-}
-
-function endButton(){
-    window.location.href = './index.html';
 }
