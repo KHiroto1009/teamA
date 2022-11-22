@@ -10,6 +10,11 @@
     font: bold 20px sans-serif;
     font-family: arial;
   }
+
+  .text2{
+    margin-top: -8px;
+    
+  }
   .button a {
     font-family: arial;
     background: #eee;
