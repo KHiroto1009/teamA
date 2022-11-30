@@ -6,6 +6,7 @@ body{
     background-size: auto auto;
     height: 30%;
     padding-top: 155px;
+    background-position-y: 380px;
 
     /* background-position: bottom; */ /*要らない要素だけど一応取っておく*/
 
@@ -13,7 +14,7 @@ body{
 h1{
     font-size: 30px;
     margin-top: 80px;
-    margin-left: 100px;
+    margin-left: 120px;
 }
 h2{ 
     font-size: 15px;
@@ -33,6 +34,7 @@ h2{
   border-radius: 50%;
   color: #fff;
   text-align: center;
+  transform: translate(-10px,-40px)
 }
   
   .button_line007 a {
@@ -49,6 +51,7 @@ h2{
     transition: 0.3s ease-in-out;
     font-weight: 600;
     background: #EECBE6;
+    margin-top: -50px;
 }
 .button_line007 a:hover {
     background: #ebfcfe;
