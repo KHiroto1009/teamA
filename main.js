@@ -42,7 +42,11 @@ const bijyoList =
 
 const setQ1= (q1num) => {
     localStorage.setItem('Q1', q1num);
-    window.location.href = './questionzpage2.html';
+    if(q1num == 1){
+        window.location.href = './questionMen1page.html'
+    }else if(q1num == 2){
+        window.location.href = './questionzpage2.html';
+    }
 }
 const setQ2= (q2num) => {
     let getQ1 = localStorage.getItem('Q1')
