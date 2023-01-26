@@ -1,6 +1,15 @@
 
 const bijyoList = 
     {
+        "111":"../../result/men/MatukawaZen.html",
+        "112":"../../result/men/NakamuraYusuke.html",
+        "113":"../../result/men/SigaHaduki.html",
+        "121":"../../result/men/MatukawaZen.html",
+        "122":"../../result/men/MunakataHayato.html",
+        "123":"../../result/men/Satoukaisei.html",
+        "131":"../../result/men/MatukawaZen.html",
+        "132":"../../result/men/ObinataItuki.html",
+        "133":"../../result/men/HaraSyuji.html",
         "2111":"../../result/short/NakazimaArisu.html",
         "2112":"../../result/short/sakaguti.html",
         "2113":"../../result/short/UsuiTinami.html",
@@ -52,14 +61,25 @@ const setQ2= (q2num) => {
     let getQ1 = localStorage.getItem('Q1')
     localStorage.setItem('Q2',getQ1+q2num)
     console.log(localStorage.getItem('Q2'))
-    window.location.href = './questionzpage3.html';
+    if(getQ1 == 1){
+        window.location.href = './questionMen2page.html'
+    }else{
+        window.location.href = './questionzpage3.html';
+    }
+    
 }
 
 const setQ3= (q3num) => {
+    let getQ1 = localStorage.getItem('Q1')
     let getQ2 = localStorage.getItem('Q2')
     localStorage.setItem('Q3',getQ2+q3num)
-    console.log(localStorage.getItem('Q3'))
-    window.location.href = './questionzpage4.html';
+    if(getQ1 == 1){
+        let result = getQ2+q3num;
+        window.location.href = bijyoList[result];
+    }else{
+        console.log(localStorage.getItem('Q3'))
+        window.location.href = './questionzpage4.html';
+    }
 }
 
 const setQ4= (q4num) => {
